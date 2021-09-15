@@ -1,0 +1,116 @@
+/* .cad-header{
+    color:black;
+    padding: 5px;
+    margin: 5px;
+    font-size: large;
+}
+
+.card-Header{
+    color:black;
+    padding: 5px;
+    margin: 2px;
+    font-size: large;
+}
+
+.float-start{
+    font-style:normal;
+    font-size: large;
+}
+
+.name{
+    width: 40%;
+}
+
+.deadline{
+    width: 50%;
+}
+
+.front_name{
+    color: black;
+    padding: 10px;
+    font-size: large;
+}
+
+.front_head{
+    padding: 10px;
+}
+
+.float-start{
+    padding: 5px;
+}
+
+.fd{
+    padding: 5px;
+} */
+
+
+.alert{
+    background-color: #ffdb9b;
+    padding: 20px 40px;
+    min-width: 420px;
+    position: absolute;
+    right: 0px;
+    top: 10px;
+    overflow: hidden;
+    border-radius: 4px;
+    border-left: 8px solid #ffa502;
+}
+
+.alert.show{
+    animation: show_slide 1s ease forwards;
+}
+@keyframes show_slide {
+    0%{
+        transform: translateX(100%);
+    }
+    40%{
+        transform: translateX(-10%);
+    }
+    80%{
+        transform: translateX(0%);
+    }
+    100%{
+        transform: translateX(-10px);
+    }
+}
+.alert.hide{
+   display: none;
+}
+
+.alert .fa-exclamation-circle{
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #ce8500;
+    font-size: 30px;
+
+}
+
+.alert .msg{
+    padding: 0 20px;
+    font-size: 18px;
+    color: #ce8500;
+
+}
+
+.alert .close-btn{
+    position: absolute;
+    right: 0px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #ffd080;
+    padding: 20px 18px;
+}
+
+.close-btn:hover{
+    background: #ffc766;
+    cursor: pointer;
+}
+
+.close-btn .fa-times{
+    color: #ce8500;
+    font-size: 22px;
+    line-height: 40px;
+
+}
